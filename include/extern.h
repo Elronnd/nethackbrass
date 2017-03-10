@@ -1577,6 +1577,8 @@ E void FDECL(defrost_obj, (struct obj *));
 
 /* ### pline.c ### */
 
+E void FDECL(msgpline_add, (int, char *));
+E void NDECL(msgpline_free);
 E void VDECL(pline, (const char *,...)) PRINTF_F(1,2);
 E void VDECL(Norep, (const char *,...)) PRINTF_F(1,2);
 E void NDECL(free_youbuf);
