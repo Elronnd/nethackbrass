@@ -298,6 +298,14 @@ char *fqn_prefix_names[PREFIX_COUNT] = { "hackdir", "leveldir", "savedir",
 /* getobj */
 const char all_count[] = { ALLOW_COUNT, ALL_CLASSES, 0 };
 
+#ifdef RECORD_ACHIEVE
+struct u_achieve achieve = DUMMY;
+#endif
+
+#if defined(RECORD_REALTIME) || defined(REALTIME_ON_BOTL)
+struct realtime_data realtime_data = { 0, 0, 0 };
+#endif
+
 /* dummy routine used to force linkage */
 void
 decl_init()
