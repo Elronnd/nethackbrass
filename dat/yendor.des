@@ -216,63 +216,63 @@ OBJECT:'(',random,random
 OBJECT:'"',random,(11,07)
 
 
-## The former decoy wizard levels.
-## There are two of these, and we need to
-## distinguish between them for the portal.
-#MAZE:"fakewiz1",random
-#GEOMETRY:center,center
-#MAP
-#.........
-#.}}}}}}}.
-#.}}---}}.
-#.}--.--}.
-#.}|...|}.
-#.}--.--}.
-#.}}---}}.
-#.}}}}}}}.
-#ENDMAP
-#STAIR:levregion(01,00,79,20),(0,0,8,7),up
-#STAIR:levregion(01,00,79,20),(0,0,8,7),down
-#BRANCH:levregion(01,00,79,20),(0,0,8,7)
-#TELEPORT_REGION:levregion(01,00,79,20),(2,2,6,6)
-#PORTAL:(4,4,4,4),(0,0,0,0),"wizard3"
-#MAZEWALK:(08,05),east
-#REGION:(04,03,06,06),unlit,"ordinary",unfilled,true
-#MONSTER:'L',random,(04,04)
-#MONSTER:'V',"vampire lord",(03,04)
-#MONSTER:';',"kraken",(06,06)
-## And to make things a little harder.
-#TRAP:"board",(04,03)
-#TRAP:"board",(04,05)
-#TRAP:"board",(03,04)
-#TRAP:"board",(05,04)
-#
-#
-#MAZE:"fakewiz2",random
-#GEOMETRY:center,center
-#MAP
-#.........
-#.}}}}}}}.
-#.}}---}}.
-#.}--.--}.
-#.}|...|}.
-#.}--.--}.
-#.}}---}}.
-#.}}}}}}}.
-#ENDMAP
-#STAIR:levregion(01,00,79,20),(0,0,8,7),up
-#STAIR:levregion(01,00,79,20),(0,0,8,7),down
-#BRANCH:levregion(01,00,79,20),(0,0,8,7)
-#TELEPORT_REGION:levregion(01,00,79,20),(2,2,6,6)
-#MAZEWALK:(08,05),east
-#REGION:(04,03,06,06),unlit,"ordinary",unfilled,true
-#MONSTER:'L',random,(04,04)
-#MONSTER:'V',"vampire lord",(03,04)
-#MONSTER:';',"kraken",(06,06)
-## And to make things a little harder.
-#TRAP:"board",(04,03)
-#TRAP:"board",(04,05)
-#TRAP:"board",(03,04)
-#TRAP:"board",(05,04)
-## treasures
-#OBJECT:'"',random,(04,04)
+# The former decoy wizard levels.
+# There are two of these, and we need to
+# distinguish between them for the portal.
+MAZE:"fakewiz1",random
+GEOMETRY:center,center
+MAP
+.........
+.}}}}}}}.
+.}}---}}.
+.}--.--}.
+.}|...|}.
+.}--.--}.
+.}}---}}.
+.}}}}}}}.
+ENDMAP
+STAIR:levregion(01,00,79,20),(0,0,8,7),up
+STAIR:levregion(01,00,79,20),(0,0,8,7),down
+BRANCH:levregion(01,00,79,20),(0,0,8,7)
+TELEPORT_REGION:levregion(01,00,79,20),(2,2,6,6)
+PORTAL:(4,4,4,4),(0,0,0,0),"wizard3"
+MAZEWALK:(08,05),east
+REGION:(04,03,06,06),unlit,"ordinary",unfilled,true
+MONSTER:'L',random,(04,04)
+MONSTER:'V',"vampire lord",(03,04)
+MONSTER:';',"kraken",(06,06)
+# And to make things a little harder.
+TRAP:"board",(04,03)
+TRAP:"board",(04,05)
+TRAP:"board",(03,04)
+TRAP:"board",(05,04)
+
+
+MAZE:"fakewiz2",random
+GEOMETRY:center,center
+MAP
+.........
+.}}}}}}}.
+.}}---}}.
+.}--.--}.
+.}|...|}.
+.}--.--}.
+.}}---}}.
+.}}}}}}}.
+ENDMAP
+STAIR:levregion(01,00,79,20),(0,0,8,7),up
+STAIR:levregion(01,00,79,20),(0,0,8,7),down
+BRANCH:levregion(01,00,79,20),(0,0,8,7)
+TELEPORT_REGION:levregion(01,00,79,20),(2,2,6,6)
+MAZEWALK:(08,05),east
+REGION:(04,03,06,06),unlit,"ordinary",unfilled,true
+MONSTER:'L',random,(04,04)
+MONSTER:'V',"vampire lord",(03,04)
+MONSTER:';',"kraken",(06,06)
+# And to make things a little harder.
+TRAP:"board",(04,03)
+TRAP:"board",(04,05)
+TRAP:"board",(03,04)
+TRAP:"board",(05,04)
+# treasures
+OBJECT:'"',random,(04,04)

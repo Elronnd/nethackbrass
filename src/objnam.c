@@ -2066,7 +2066,7 @@ boolean from_user;
 		    (can_be_frozen(&mons[mntmp])
 #ifdef WIZARD
 		     || wizard
-#endif WIZARD
+#endif
 		    )
 		) return mkicefrozenmon(mntmp);
 	}

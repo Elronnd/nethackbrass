@@ -364,7 +364,7 @@ doubleattack_roll()
 		roll = (roll+5 < 10) ? 10 : (roll+5);	/* Quick Blade is really quick! */
 #ifdef WIZARD
 	if (wizard) pline("[x2:%d]", roll);
-#endif WIZARD
+#endif
 	return (roll < 0) ? 0 : roll;
 }
 
@@ -384,7 +384,7 @@ int x;
 
 	for (otmp = mtmp->minvent; otmp; otmp = otmp->nobj) {
 	    if (otmp->otyp == x &&
-		    /* never select non-cockatrice corpses */
+	/* never select non-cockatrice corpses */
 		    !((x == CORPSE || x == EGG) &&
 			!touch_petrifies(&mons[otmp->corpsenm])) &&
 		    (!otmp->oartifact || touch_artifact(otmp,mtmp)))
