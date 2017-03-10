@@ -18,6 +18,12 @@ E char *FDECL(fmt_ptr, (const genericptr,char *));
  * interrupted only occasionally to pick up specific functions as needed. */
 #if !defined(MAKEDEFS_C) && !defined(LEV_LEX_C)
 
+/* drawing functions */
+E void FDECL(term_start_color, (int));
+E void NDECL(term_end_color);
+E void FDECL(term_start_attr, (int));
+E void FDECL(term_end_attr, (int));
+
 /* ### allmain.c ### */
 
 E void NDECL(moveloop);
@@ -106,6 +112,8 @@ E int NDECL(newhp);
 E schar FDECL(acurr, (int));
 E schar NDECL(acurrstr);
 E void FDECL(adjalign, (int));
+E int NDECL(uhp);
+E int NDECL(uhpmax);
 E int NDECL(get_diginity);
 E void FDECL(addhpmax, (int));
 E void NDECL(recalchpmax);
