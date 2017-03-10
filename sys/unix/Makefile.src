@@ -228,10 +228,10 @@ WINOBJ = $(WINTTYOBJ)
 #
 # libraries for tty ports
 # WINTTYLIB = -ltermcap
-# WINTTYLIB = -lcurses
+WINTTYLIB = -lcurses
 # WINTTYLIB = -lcurses16
 # WINTTYLIB = -lncurses
-WINTTYLIB = -ltermlib
+# WINTTYLIB = -ltermlib
 #
 # libraries for X11
 # If USE_XPM is defined in config.h, you will also need -lXpm here.
