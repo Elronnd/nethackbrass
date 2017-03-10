@@ -4,6 +4,7 @@ Makefile
 dat/Makefile
 doc/Makefile
 util/Makefile
+src/Makefile
 
 # automatically generated
 dat/options
